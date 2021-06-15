@@ -8,7 +8,6 @@ export const app = express()
 // app.use(bodyParser)
 
 const port = process.env.SERVER_PORT
-
 // define a route handler for the default home page
 app.get('/', (req, res) => {
     res.send('hello')
@@ -16,7 +15,7 @@ app.get('/', (req, res) => {
 
 // handle registering a user
 app.post('/api/1.0/users', (req, res) => {
-    return res.status(200).json({ message: 'user created' })
+    return res.status(200).json({ message: 'User created' })
 })
 
 // start the express server

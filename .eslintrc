@@ -1,9 +1,10 @@
 {
     "root": true,
     "parser": "@typescript-eslint/parser",
-    "plugins": ["@typescript-eslint"],
+    "plugins": ["prettier", "@typescript-eslint"],
     "extends": [
         "eslint:recommended",
+        "prettier",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended"
     ],
@@ -11,6 +12,7 @@
     "rules": {
         "semi": "off",
         "quotes": ["warn", "single"],
+        "prettier/prettier": ["error"],
         "no-console": 0 // 0 => off, 1 => warn, 2 => error
     }
 }
